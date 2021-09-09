@@ -1,0 +1,86 @@
+﻿@{ 
+    ViewBag.Title = "IMC";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resultado IMC</title>
+        <meta charset="utf-8"/>
+        <!--Esto es un comentario-->
+        <!--en el head se coloca informacion que es para el navegador, scripts, css-->
+    </head>
+    <body>
+        <!--aqui inicia el cuerpo de la pagina que se esta creando (la vista)-->
+        <h1>Resultado</h1>
+
+        <div class="seccion_1" id="s1">
+
+            <table class="table">
+
+                <tr>
+
+                    <th>Encabezado1</th>
+
+                    <th>Encabezado2</th>
+
+                    <th>Encabezado3</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>@ViewBag.persona.Nombre</td>
+
+                    <td>Fila 1, Columna 2</td>
+
+                    <td>Fila 1, Columna 3</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Fila 2, Columna 1</td>
+
+                    <td>Fila 2, Columna 2</td>
+
+                    <td>Fila2, Columna 3</td>
+
+                </tr>
+
+            </table>
+            <hr />
+        </div>
+
+        <div class="seccion_2" id="s2">
+
+            <ul>
+                <li> Elemento 1</li>
+                <li> Elemento 2</li>
+                <li> Elemento 3</li>
+            </ul>
+            <hr />
+        </div>
+
+        <div class="seccion_3" id="s3">
+            <input type="button" value="Volver al inicio" onclick="history.back()" /><hr />
+
+        </div>
+        <div class="seccion_4"
+             @if (ViewBag.IMC > 20) {<div class="text-sucess">
+                    <p style="color:blue;">Mensaje</p>
+                </div>
+         }
+         else
+            {
+                <div class="text-danger">
+                    <p style="color:red;">Otro Mensaje</p>
+                </div>
+
+            }
+    </div>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,619 @@
+﻿@{
+    ViewBag.Title = "IMC Aleatorio";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado IMC</title>
+    <meta charset="utf-8" />
+    <!--Esto es un comentario-->
+    <!--en el head se coloca informacion que es para el navegador, scripts, css-->
+</head>
+<body>
+    <!--aqui inicia el cuerpo de la pagina que se esta creando (la vista)-->
+    <h1>Resultado</h1>
+
+    <div class="seccion_1" id="s1">
+
+        <table class="table">
+
+            <tr>
+
+                <th>Id</th>
+
+                <th>Nombre</th>
+
+                <th>Peso</th>
+
+                <th>Estatura</th>
+
+                <th>IMC</th>
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[0].Id</td>
+
+                <td>@ViewBag.personas[0].Nombre</td>
+
+                <td>@ViewBag.personas[0].Peso</td>
+
+                <td>@ViewBag.personas[0].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[0] > 18.5 && @ViewBag.imcs[0] < 25)
+                    {<div class="text-sucess">
+                         <p style="color:green;">@ViewBag.imcs[0]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[0]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[1].Id</td>
+
+                <td>@ViewBag.personas[1].Nombre</td>
+
+                <td>@ViewBag.personas[1].Peso</td>
+
+                <td>@ViewBag.personas[1].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[1] > 18.5 && @ViewBag.imcs[1] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[1]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[1]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[2].Id</td>
+
+                <td>@ViewBag.personas[2].Nombre</td>
+
+                <td>@ViewBag.personas[2].Peso</td>
+
+                <td>@ViewBag.personas[2].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[2] > 18.5 && @ViewBag.imcs[2] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[2]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[2]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[3].Id</td>
+
+                <td>@ViewBag.personas[3].Nombre</td>
+
+                <td>@ViewBag.personas[3].Peso</td>
+
+                <td>@ViewBag.personas[3].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[3] > 18.5 && @ViewBag.imcs[3] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[3]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[3]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[4].Id</td>
+
+                <td>@ViewBag.personas[4].Nombre</td>
+
+                <td>@ViewBag.personas[4].Peso</td>
+
+                <td>@ViewBag.personas[4].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[4] > 18.5 && @ViewBag.imcs[4] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[4]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[4]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[5].Id</td>
+
+                <td>@ViewBag.personas[5].Nombre</td>
+
+                <td>@ViewBag.personas[5].Peso</td>
+
+                <td>@ViewBag.personas[5].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[5] > 18.5 && @ViewBag.imcs[5] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[5]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[5]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[6].Id</td>
+
+                <td>@ViewBag.personas[6].Nombre</td>
+
+                <td>@ViewBag.personas[6].Peso</td>
+
+                <td>@ViewBag.personas[6].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[6] > 18.5 && @ViewBag.imcs[6] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[6]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[6]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[7].Id</td>
+
+                <td>@ViewBag.personas[7].Nombre</td>
+
+                <td>@ViewBag.personas[7].Peso</td>
+
+                <td>@ViewBag.personas[7].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[7] > 18.5 && @ViewBag.imcs[7] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[7]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[7]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[8].Id</td>
+
+                <td>@ViewBag.personas[8].Nombre</td>
+
+                <td>@ViewBag.personas[8].Peso</td>
+
+                <td>@ViewBag.personas[8].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[8] > 18.5 && @ViewBag.imcs[8] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[8]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[8]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[9].Id</td>
+
+                <td>@ViewBag.personas[9].Nombre</td>
+
+                <td>@ViewBag.personas[9].Peso</td>
+
+                <td>@ViewBag.personas[9].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[9] > 18.5 && @ViewBag.imcs[9] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[9]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[9]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[10].Id</td>
+
+                <td>@ViewBag.personas[10].Nombre</td>
+
+                <td>@ViewBag.personas[10].Peso</td>
+
+                <td>@ViewBag.personas[10].Estatura</td>
+
+                <td>
+                    @if (@ViewBag.imcs[10] > 18.5 && @ViewBag.imcs[10] < 25)
+                    {<div class="text-sucess">
+                            <p style="color:green;">@ViewBag.imcs[10]</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-danger">
+                            <p style="color:red;">@ViewBag.imcs[10]</p>
+                        </div>
+
+                    }
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[11].Id</td>
+
+                <td>@ViewBag.personas[11].Nombre</td>
+
+                <td>@ViewBag.personas[11].Peso</td>
+
+                <td>@ViewBag.personas[11].Estatura</td>
+
+                <td>@ViewBag.imcs[11]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[12].Id</td>
+
+                <td>@ViewBag.personas[12].Nombre</td>
+
+                <td>@ViewBag.personas[12].Peso</td>
+
+                <td>@ViewBag.personas[12].Estatura</td>
+
+                <td>@ViewBag.imcs[12]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[13].Id</td>
+
+                <td>@ViewBag.personas[13].Nombre</td>
+
+                <td>@ViewBag.personas[13].Peso</td>
+
+                <td>@ViewBag.personas[13].Estatura</td>
+
+                <td>@ViewBag.imcs[13]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[14].Id</td>
+
+                <td>@ViewBag.personas[14].Nombre</td>
+
+                <td>@ViewBag.personas[14].Peso</td>
+
+                <td>@ViewBag.personas[14].Estatura</td>
+
+                <td>@ViewBag.imcs[14]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[15].Id</td>
+
+                <td>@ViewBag.personas[15].Nombre</td>
+
+                <td>@ViewBag.personas[15].Peso</td>
+
+                <td>@ViewBag.personas[15].Estatura</td>
+
+                <td>@ViewBag.imcs[15]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[16].Id</td>
+
+                <td>@ViewBag.personas[16].Nombre</td>
+
+                <td>@ViewBag.personas[16].Peso</td>
+
+                <td>@ViewBag.personas[16].Estatura</td>
+
+                <td>@ViewBag.imcs[16]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[17].Id</td>
+
+                <td>@ViewBag.personas[17].Nombre</td>
+
+                <td>@ViewBag.personas[17].Peso</td>
+
+                <td>@ViewBag.personas[17].Estatura</td>
+
+                <td>@ViewBag.imcs[17]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[18].Id</td>
+
+                <td>@ViewBag.personas[18].Nombre</td>
+
+                <td>@ViewBag.personas[18].Peso</td>
+
+                <td>@ViewBag.personas[18].Estatura</td>
+
+                <td>@ViewBag.imcs[18]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[19].Id</td>
+
+                <td>@ViewBag.personas[19].Nombre</td>
+
+                <td>@ViewBag.personas[19].Peso</td>
+
+                <td>@ViewBag.personas[19].Estatura</td>
+
+                <td>@ViewBag.imcs[19]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[20].Id</td>
+
+                <td>@ViewBag.personas[20].Nombre</td>
+
+                <td>@ViewBag.personas[20].Peso</td>
+
+                <td>@ViewBag.personas[20].Estatura</td>
+
+                <td>@ViewBag.imcs[20]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[21].Id</td>
+
+                <td>@ViewBag.personas[21].Nombre</td>
+
+                <td>@ViewBag.personas[21].Peso</td>
+
+                <td>@ViewBag.personas[21].Estatura</td>
+
+                <td>@ViewBag.imcs[21]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[22].Id</td>
+
+                <td>@ViewBag.personas[22].Nombre</td>
+
+                <td>@ViewBag.personas[22].Peso</td>
+
+                <td>@ViewBag.personas[22].Estatura</td>
+
+                <td>@ViewBag.imcs[22]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[23].Id</td>
+
+                <td>@ViewBag.personas[23].Nombre</td>
+
+                <td>@ViewBag.personas[23].Peso</td>
+
+                <td>@ViewBag.personas[23].Estatura</td>
+
+                <td>@ViewBag.imcs[23]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[24].Id</td>
+
+                <td>@ViewBag.personas[24].Nombre</td>
+
+                <td>@ViewBag.personas[24].Peso</td>
+
+                <td>@ViewBag.personas[24].Estatura</td>
+
+                <td>@ViewBag.imcs[24]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[25].Id</td>
+
+                <td>@ViewBag.personas[25].Nombre</td>
+
+                <td>@ViewBag.personas[25].Peso</td>
+
+                <td>@ViewBag.personas[25].Estatura</td>
+
+                <td>@ViewBag.imcs[25]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[26].Id</td>
+
+                <td>@ViewBag.personas[26].Nombre</td>
+
+                <td>@ViewBag.personas[26].Peso</td>
+
+                <td>@ViewBag.personas[26].Estatura</td>
+
+                <td>@ViewBag.imcs[26]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[27].Id</td>
+
+                <td>@ViewBag.personas[27].Nombre</td>
+
+                <td>@ViewBag.personas[27].Peso</td>
+
+                <td>@ViewBag.personas[27].Estatura</td>
+
+                <td>@ViewBag.imcs[27]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[28].Id</td>
+
+                <td>@ViewBag.personas[28].Nombre</td>
+
+                <td>@ViewBag.personas[28].Peso</td>
+
+                <td>@ViewBag.personas[28].Estatura</td>
+
+                <td>@ViewBag.imcs[28]</td>
+
+            </tr>
+
+            <tr>
+
+                <td>@ViewBag.personas[29].Id</td>
+
+                <td>@ViewBag.personas[29].Nombre</td>
+
+                <td>@ViewBag.personas[29].Peso</td>
+
+                <td>@ViewBag.personas[29].Estatura</td>
+
+                <td>@ViewBag.imcs[29]</td>
+
+            </tr>
+
+
+        </table>
+        <hr />
+    </div>
+
+    <div class="seccion_2" id="s2">
+
+        <ul>
+            <li> Elemento 1</li>
+            <li> Elemento 2</li>
+            <li> Elemento 3</li>
+        </ul>
+        <hr />
+    </div>
+
+   <div class="seccion_3" id="s3">
+            <input type="button" value="Volver al inicio" onclick="history.back()" /><hr />
+
+        </div>
+
+ 
+</body>
+</html>
